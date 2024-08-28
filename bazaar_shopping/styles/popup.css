@@ -1,0 +1,58 @@
+/* General Styles for the Popup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 300px;
+}
+
+/* Container for the Search Bar and Buttons */
+#site-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between elements */
+}
+
+/* Style for the Search Bar */
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px); /* Adjusting width to account for padding */
+}
+
+/* Style for Buttons */
+#site-selector button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#site-selector button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style for the Popup Container */
+.popup-container {
+    padding: 10px;
+}
+
+/* Optional: Style for Headings (if needed) */
+h1, h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Optional: Style for Additional Information Text (if needed) */
+.info-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
+}

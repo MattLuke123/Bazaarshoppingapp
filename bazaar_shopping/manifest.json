@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Bazaar Shopping",
+  "version": "1.0",
+  "description": "Quick access to your favorite shopping sites, search deals, and get notifications for discounts.",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "permissions": [
+    "notifications",
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.png"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "Command+Shift+F"
+      },
+      "description": "Search deals across all platforms"
+    }
+  }
+}
